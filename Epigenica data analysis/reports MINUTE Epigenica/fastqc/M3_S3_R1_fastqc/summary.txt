@@ -1,0 +1,11 @@
+PASS	Basic Statistics	M3_S3_R1.fastq.gz
+PASS	Per base sequence quality	M3_S3_R1.fastq.gz
+FAIL	Per tile sequence quality	M3_S3_R1.fastq.gz
+PASS	Per sequence quality scores	M3_S3_R1.fastq.gz
+FAIL	Per base sequence content	M3_S3_R1.fastq.gz
+WARN	Per sequence GC content	M3_S3_R1.fastq.gz
+PASS	Per base N content	M3_S3_R1.fastq.gz
+PASS	Sequence Length Distribution	M3_S3_R1.fastq.gz
+PASS	Sequence Duplication Levels	M3_S3_R1.fastq.gz
+PASS	Overrepresented sequences	M3_S3_R1.fastq.gz
+FAIL	Adapter Content	M3_S3_R1.fastq.gz

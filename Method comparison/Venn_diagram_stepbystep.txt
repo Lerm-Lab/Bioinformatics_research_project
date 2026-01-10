@@ -1,0 +1,85 @@
+# Sort the 3 lists to compare the genes between MBD inhouse, MBD commertial and 850k array
+
+sort Genes_Methylated_InHouse.txt > sorted_InHouse.txt
+sort Genes_Methylated_Commercial.txt > sorted_Commercial.txt
+sort Genes_Methylated_Array.txt > sorted_Array.txt
+
+
+
+echo "--- In-House vs. Array ---"
+# Count overlap
+comm -12 sorted_InHouse.txt sorted_Array.txt | wc -l
+
+# View total counts for context
+echo "Total In-House Genes:"
+wc -l sorted_InHouse.txt
+
+
+
+echo "--- Commercial vs. Array ---"
+# Count overlap
+comm -12 sorted_Commercial.txt sorted_Array.txt | wc -l
+
+# View total counts for context
+echo "Total Commercial Genes:"
+wc -l sorted_Commercial.txt
+
+
+
+# How to make the Venn diagram 
+
+# 1. Get Total Size of the Array List
+echo "Total Genes in Array List:"
+wc -l sorted_Array.txt
+
+# 2. Get Overlap: In-House vs. Commercial (The two MBD methods)
+echo "Overlap (In-House & Commercial):"
+comm -12 sorted_InHouse.txt sorted_Commercial.txt | wc -l
+
+# 3. Get the "Core" Overlap (Shared by ALL THREE methods)
+echo "Overlap (All 3 Methods):"
+comm -12 sorted_InHouse.txt sorted_Commercial.txt | comm -12 - sorted_Array.txt | wc -l
+
+
+# this part is in R 
+
+# Install library if you don't have it
+if (!require(VennDiagram)) install.packages("VennDiagram", repos = "http://cran.us.r-project.org")
+library(VennDiagram)
+
+# 1. Enter your exact numbers
+# These come from your terminal output
+grid.newpage()
+draw.triple.venn(
+  area1 = 13121,    # Total In-House
+  area2 = 26044,    # Total Commercial
+  area3 = 20026,    # Total Array
+  n12 = 12321,      # In-House + Commercial
+  n23 = 12494,      # Commercial + Array
+  n13 = 7150,       # In-House + Array
+  n123 = 6888,      # All Three
+  category = c("In-House MBD", "Commercial MBD", "Illumina 850k"),
+  fill = c("skyblue", "pink", "mediumorchid"),
+  alpha = 0.5,
+  lty = "blank",
+  cex = 1.5,
+  cat.cex = 1.2,
+  cat.pos = c(-20, 20, 180)
+)
+
+
+
+# back to the termial 
+
+# Comm -12 finds lines common to both files
+# We pipe the result of the first two into the third one
+comm -12 sorted_InHouse.txt sorted_Commercial.txt | comm -12 - sorted_Array.txt > Overlap_All_3_Methods.txt
+
+# View the first 10 genes
+head Overlap_All_3_Methods.txt
+
+
+comm -12 sorted_InHouse.txt sorted_Array.txt > Overlap_InHouse_vs_Array.txt
+
+# upload the list to Metascape.org
+

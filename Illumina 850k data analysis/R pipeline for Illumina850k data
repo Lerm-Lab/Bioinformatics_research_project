@@ -1,0 +1,248 @@
+## Author details
+## Purpose of the script: To analyze the 4 PBMC samples from Illumina 850k using minfi
+## 
+## Author(s): Shumaila Sayyab, Ph.D., Klaudia Orfin
+## Date Created: 10.12.2025
+
+
+### Pipeline for the analysis of DNA methylation
+
+# 1. Loading packages and setting up working directories 
+# 2. Processing of IDAT files with minfi
+# 3. Quality control (QC)
+# 4. Data normalization
+# 5. Multidimensional scaling (MDS) plot
+# 6. Filtering
+# 7. Cell type deconvolution
+
+
+
+## 1. Setting up, loading libraries and Illumina annotations ##
+
+library("minfi")
+library("IlluminaHumanMethylationEPICanno.ilm10b4.hg19")
+
+baseDir <- "~/Illumina_850k_DNAmethylation_data_donors"
+dataDir <- file.path(baseDir, "data")
+annotDir <- file.path(baseDir, "Annotations")
+
+# Create output directories 
+
+outputDirs <- c("Results", "Results/RDS_files", "Plots")
+sapply(outputDirs, function(x) {
+  if (!dir.exists(x)) dir.create(x, recursive = TRUE)
+})
+
+## 2. Process IDAT files with minfi ##
+
+# Load annotations for 850k EPIC
+
+ann850k <- getAnnotation(IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
+
+# Load CSVs
+
+annot <- read.csv(file.path(annotDir, "annotation_EPIC.csv"))
+xReactiveProbes <- read.table(file.path(annotDir, "48639-non-specific-probes-Illumina450k.csv"), 
+                              sep=",", header=TRUE)
+
+# Load IDAT files
+
+targets <- read.metharray.sheet(dataDir, pattern = "metadata.csv") # Takes the path to rawdata and samplesheet. 
+                                                                    # The samplesheet is a CSV file containing one line per sample, with a number of columns describing each sample.
+rgSet <- read.metharray.exp(targets = targets) # Creates a column called Basename which specifies the location of each individual IDAT file in the experiment. 
+                                                # This generates an RGChannelSet object containing the raw green and red intensity data.
+# Assign sample names
+
+targets$ID <- targets$Sample_Name
+sampleNames(rgSet) <- targets$ID
+
+# Save raw object for further use
+
+save(rgSet, file = "Results/RDS_files/rgSet_Illumina850kdata.RData")
+
+## 3. QC ##
+
+# Transform RGChannelSet object to MethylSet object
+
+MSet <- preprocessRaw(rgSet) # Uses the array design to match up the different probes and color channels to construct the methylated and unmethylated signals.
+qc <- getQC(MSet)
+
+# plot QC
+
+png("Plots/qc_plot.png", width = 1200, height = 900)
+plotQC(qc)
+dev.off()
+
+# Calculate detection p-values and plot as barplot
+
+detP <- detectionP(rgSet) # Compares the total signal (M+U) to each probe to the background signal level which is estimated from the negative control probes. Large p-values = poor quality.
+
+png("Plots/detection_p_values.png", width = 1200, height = 900)
+barplot(colMeans(detP), las=2,
+        cex.names=0.8, 
+        ylab="Mean detection p-values",
+        main="Mean Detection P-Values per Sample")
+abline(h=0.01, col="red")
+legend("topleft", legend=levels(factor(targets$Sample_Group)), bg="white") 
+dev.off()
+
+## 4. Data normalization ##
+
+mSetQ <- preprocessQuantile(rgSet) # used when you do not expect global differences between your samples, e.g. blood dataset, or one-tissue dataset.
+
+# Compare raw vs. normalized
+
+png("Plots/Density_Plots_After_Normalization.png", width = 1200, height = 600)
+par(mfrow=c(1,2))
+
+# Plot 1: raw
+
+densityPlot(rgSet, sampGroups=targets$Sample_Group, main="Raw data", legend=FALSE)
+legend("top", legend = levels(factor(targets$Sample_Group)), cex=0.7)
+
+# Plot 2: Quantile
+
+densityPlot(getBeta(mSetQ), sampGroups=targets$Sample_Group, main="Quantile Normalized", legend=FALSE)
+legend("top", legend = levels(factor(targets$Sample_Group)), cex=0.7)
+
+dev.off()
+
+## 5. MDS plot ##
+
+png("Plots/MDS_Plot.png", width = 1200, height = 600)
+par(mar = c(5, 4, 4, 6) + 0.1)
+par(mfrow=c(1,1))
+
+mdsPlot(getBeta(mSetQ), numPositions = 1000, sampNames = NULL, sampGroups = targets$Sample_Group, 
+    pch = 19, legendPos = "bottomleft", 
+    main = "MDS before Filtering")
+
+dev.off()
+
+## 6. Filtering ##
+
+detP <- detP[match(featureNames(mSetQ), rownames(detP)),] #ensures probes are in the same order in the mSetQ and detP objects
+
+# remove probes that have failed in 1 or more samples
+keep <- rowSums(detP < 0.01) == ncol(mSetQ)
+table(keep)
+mSetQFlt.bf <- mSetQ[keep,]
+dim(mSetQFlt.bf)
+
+# remove probes on the sex chromosomes
+
+keep <- !(featureNames(mSetQFlt.bf) %in% ann850k$Name[ann850k$chr %in% c("chrX","chrY")])
+
+table(keep)
+mSetQFlt <- mSetQFlt.bf[keep,]
+dim(mSetQFlt)
+
+# remove probes with SNPs at CpG site
+
+gset <- mapToGenome(mSetQFlt)
+mSetQFlt <- dropLociWithSnps(gset)
+dim(mSetQFlt)
+dim(targets)
+
+# exclude cross reactive probes
+
+keep <- !(featureNames(mSetQFlt) %in% xReactiveProbes$TargetID)
+table(keep)
+
+mSetQFlt <- mSetQFlt[keep,]
+
+dim(mSetQFlt)
+
+# Beta = M/(M + U +100)
+# Mvalue = log2(M/U)
+
+# calculate M and beta values
+
+mVals <- getM(mSetQFlt)
+bVals <- getBeta(mSetQFlt)
+
+# MDS after filtering 
+
+png("Plots/MDS_after_filtering.png", width = 1200, height = 600)
+
+par(mfrow=c(1,2))
+mdsPlot(dat = bVals, numPositions = 1000, sampNames = NULL, sampGroups = targets$Sample_Group, 
+        pch = 19, legendPos = "topright", 
+        main = "Norm. beta-values after filtering")
+
+mdsPlot(dat = mVals, numPositions = 1000, sampNames = NULL, sampGroups = targets$Sample_Group, 
+        pch = 19, legendPos = "topright", 
+        main = "Norm. M-values after filtering")
+dev.off()
+
+## 7. Cell type deconvolution ##
+
+library(EpiDISH)
+library(RColorBrewer)
+
+data("centDHSbloodDMC.m")
+
+frac.m <- hepidish(beta.m = bVals, ref1.m = centEpiFibIC.m, ref2.m = centBloodSub.m[,c(1,2,3,4,5,6,7)], h.CT.idx = 3, method = 'RPC')
+
+# box plot to visualize the cell type proportions 
+pal = c('#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fccde5',
+        '#b3de69','#fdb462','#c7eae5','#d9d9d9','#dfc27d','#01665e')
+
+png("Plots/Cell_types_proportions.png", width = 1200, height = 600)
+boxplot(frac.m, col = pal, las = 2, main = "Cell Type Proportions")
+dev.off() 
+
+write.table(frac.m, "Results/Tables/Cell_type_proportions_epidish.csv",
+sep = ",",
+quote = F, 
+row.names = T)
+
+# plot cell type distribution for each sample
+
+library(ggplot2)
+library(ggpubr)
+
+png("Plots/Cell_type_distribution.png", width = 1200, height = 600)
+
+mixAny <- reshape2::melt(frac.m)
+colnames(mixAny) <- c("sample","cell","proportion")
+
+p2 <- ggplot(mixAny, aes(x = sample, fill = cell)) +
+  geom_bar(aes(weight = proportion)) +
+  labs(x = "Sample", y = "Proportion", fill = "Cell type") +
+  scale_x_discrete(breaks = waiver(), labels = rownames(frac.m))+
+  #scale_x_discrete(breaks = waiver(), labels = NULL)+
+  theme_pubr(base_size = 19, margin = FALSE,legend="right")+
+  scale_fill_manual(values = pal)
+p2<-p2+ theme(axis.text.x = element_text(angle = 90))
+
+print(p2)
+
+dev.off()
+
+## 8. Get the Array Gene List ##
+
+# 1. Calculate Average Methylation across your 4 donors
+# We use rowMeans() to find probes that are methylated in your group
+avg_beta <- rowMeans(bVals, na.rm = TRUE)
+
+# 2. Filter for High Methylation (Beta > 0.6)
+# This matches our definition of "Silenced"
+methylated_probes <- names(avg_beta)[avg_beta > 0.6]
+
+# 3. Filter for PROMOTERS only
+# We look for probes in TSS1500, TSS200, or 5'UTR using your annotation object 'ann850k' [cite: 164]
+promoter_probes <- rownames(ann850k)[grep("TSS|5'UTR", ann850k$UCSC_RefGene_Group)]
+
+# 4. Find the Overlap (Methylated AND in a Promoter)
+target_probes <- intersect(methylated_probes, promoter_probes)
+
+# 5. Extract the Gene Names
+# The annotation splits genes with ";" so we need to clean it up
+target_genes <- unique(unlist(strsplit(ann850k[target_probes, "UCSC_RefGene_Name"], ";")))
+
+# 6. Save the list to a text file
+write.table(target_genes, "Genes_Methylated_Array.txt", 
+            quote=FALSE, row.names=FALSE, col.names=FALSE)
+
+message("Success! Found ", length(target_genes), " methylated genes.")

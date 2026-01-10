@@ -1,0 +1,3 @@
+Sample	FastQC on raw reads	Cutadapt
+Cutadapt		4.4
+FastQC on raw reads	0.12.1	

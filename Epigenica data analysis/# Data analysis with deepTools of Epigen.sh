@@ -1,0 +1,70 @@
+# Data analysis with deepTools of Epigenica's Data
+
+1. Uploaded hg19 gene annotations to ubuntu 
+
+scp -o "ProxyJump klaudia.orfin.8677@student.uu.se@dsp.aida.scilifelab.se" /home/orfin/Downloads/hg19_gencode.gtf.gz ubuntu@10.253.19.38:/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment
+
+
+2. Replicate correlation with multiBamSummary and PCA
+
+multiBamSummary bins  --bamfiles    ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bam/INP_Donor*_pooled.hg19.bam   ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bam/M2_S2_Donor*_pooled.hg19.bam    ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bam/M3_S3_Donor*_pooled.hg19.bam    ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bam/M4_S4_Donor*_pooled.hg19.bam  --outFileName results_heatmap.npz  --smartLabels  -p 4
+
+
+plotCorrelation \
+ -in results_heatmap.npz \
+ --corMethod spearman \
+ --skipZeros \
+ --plotTitle "Spearman Correlation: Methylation vs Unmethylation" \
+ --whatToPlot heatmap \
+ --colorMap Blues \
+ --plotNumbers \
+ -o heatmap_SpearmanCorr.png
+
+
+ plotPCA \
+ -in results_heatmap.npz \
+ -o PCA_plot.png \
+ --plotTitle "PCA: Methylation Capture Methods"
+
+ plotFingerprint \
+ --bamfiles \
+   my_experiment/final/bam/M2_S2_Donor1_S1_pooled.hg19.bam \
+   my_experiment/final/bam/M4_S4_Donor1_S1_pooled.hg19.bam \
+   my_experiment/final/bam/M3_S3_Donor1_S1_pooled.hg19.bam \
+   my_experiment/final/bam/INP_Donor1_S1_pooled.hg19.bam \
+ --labels Me_InHouse Me_Commercial Unmethylated Input \
+ --plotFile fingerprint_plot.png \
+ --numberOfSamples 50000 \
+ --skipZeros \
+ -p 4
+
+ # Note: Ensure you use the hg19_gencode.gtf.gz downloaded in Phase 1
+
+ gunzip hg19_genecode.gtf.gz
+
+computeMatrix scale-regions \
+ -S \
+   ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bigwig/INP_Donor1_S1_pooled.hg19.unscaled.bw \
+   ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bigwig/M2_S2_Donor1_S1_pooled.hg19.unscaled.bw \
+   ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bigwig/M3_S3_Donor1_S1_pooled.hg19.unscaled.bw \
+   ~/Epigenica_data/Klaudia_analysis_new/my_experiment/final/bigwig/M4_S4_Donor1_S1_pooled.hg19.unscaled.bw \
+ -R hg19_gencode.gtf \
+ --beforeRegionStartLength 3000 \
+ --regionBodyLength 5000 \
+ --afterRegionStartLength 3000 \
+ --skipZeros \
+ --outFileName matrix_genes.gz \
+ -p 4
+
+
+plotHeatmap \
+ -m matrix_genes.gz \
+ -out Methylation_Heatmap_Donor1.png \
+ --plotFileFormat png \
+ --colorMap Reds \
+ --samplesLabel "Input" "Me-InHouse (M2)" "Unmethylated (M3)" "Me-Commercial (M4)" \
+ --whatToShow "heatmap and colorbar" \
+ --zMin 0 --zMax 5 \
+ --plotTitle "DNA Methylation Profile (Donor 1)"
+
+ 

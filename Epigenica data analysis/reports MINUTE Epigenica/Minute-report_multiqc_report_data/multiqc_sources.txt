@@ -1,0 +1,237 @@
+Module	Section	Sample Name	Source
+FastQC on raw reads	all_sections	INP_R1	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/INP_R1_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	INP_R2	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/INP_R2_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	M2_S2_R1	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/M2_S2_R1_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	M2_S2_R2	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/M2_S2_R2_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	M3_S3_R1	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/M3_S3_R1_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	M3_S3_R2	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/M3_S3_R2_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	M4_S4_R1	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/M4_S4_R1_fastqc/fastqc_data.txt
+FastQC on raw reads	all_sections	M4_S4_R2	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/reports/fastqc/M4_S4_R2_fastqc/fastqc_data.txt
+Cutadapt	all_sections	INP	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/log/2-noadapters/INP.trimmed.log
+Cutadapt	all_sections	M2_S2	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/log/2-noadapters/M2_S2.trimmed.log
+Cutadapt	all_sections	M3_S3	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/log/2-noadapters/M3_S3.trimmed.log
+Cutadapt	all_sections	M4_S4	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/log/2-noadapters/M4_S4.trimmed.log
+Samtools stats	flagstat	INP_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S1_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S2_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S2_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S2_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S2_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S1_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S1_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M2_S2_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S1_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S2_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	M4_S4_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	M3_S3_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S2_rep1.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S1_pooled.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S1_rep2.hg19.flagstat.txt
+Samtools stats	flagstat	INP_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S2_rep1.hg19.flagstat.txt
+Samtools stats	idxstats	M2_S2_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S1_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S1_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S2_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S2_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M2_S2_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	INP_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S1_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S2_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M3_S3_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S1_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S2_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S2_rep1.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S1_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S1_rep2.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S2_pooled.hg19.idxstats.txt
+Samtools stats	idxstats	M4_S4_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S2_rep1.hg19.idxstats.txt
+Picard	InsertSizeMetrics	M2_S2_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S1_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S1_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S2_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S2_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S1_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S2_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S1_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S2_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S1_rep2.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S2_rep1.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor4_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor2_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor1_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor2_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor1_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor1_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor1_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor2_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor3_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor4_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor2_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor3_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor3_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor3_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor4_S1_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor4_S1_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M3_S3_Donor1_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M3_S3_Donor1_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M2_S2_Donor4_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M2_S2_Donor4_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	M4_S4_Donor3_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/M4_S4_Donor3_S2_pooled.hg19.insertsizes.txt
+Picard	InsertSizeMetrics	INP_Donor2_S2_pooled.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/final/INP_Donor2_S2_pooled.hg19.insertsizes.txt
+Picard	DuplicationMetrics	M2_S2_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor1_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor1_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor1_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor1_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor2_S1_rep1.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor2_S1_rep1.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor2_S2_rep2.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor2_S2_rep2.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor3_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor3_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor3_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor3_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor4_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor4_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M2_S2_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M2_S2_Donor4_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	INP_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/INP_Donor4_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor1_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor1_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor2_S1_rep1.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor2_S2_rep2.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor3_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor3_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor4_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M3_S3_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M3_S3_Donor4_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor1_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor1_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor1_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor1_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor2_S1_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor2_S1_rep1.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor2_S2_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor2_S2_rep2.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor3_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor3_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor3_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor3_S2_rep1.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor4_S1_rep2.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor4_S1_rep2.hg19.metrics
+Picard	DuplicationMetrics	M4_S4_Donor4_S2_rep1.hg19	/home/ubuntu/Epigenica_data/Klaudia_analysis_new/my_experiment/stats/7-dupmarked/M4_S4_Donor4_S2_rep1.hg19.metrics

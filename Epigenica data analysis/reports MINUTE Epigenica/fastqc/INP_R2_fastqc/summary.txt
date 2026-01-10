@@ -1,0 +1,11 @@
+PASS	Basic Statistics	INP_R2.fastq.gz
+PASS	Per base sequence quality	INP_R2.fastq.gz
+FAIL	Per tile sequence quality	INP_R2.fastq.gz
+PASS	Per sequence quality scores	INP_R2.fastq.gz
+WARN	Per base sequence content	INP_R2.fastq.gz
+PASS	Per sequence GC content	INP_R2.fastq.gz
+PASS	Per base N content	INP_R2.fastq.gz
+PASS	Sequence Length Distribution	INP_R2.fastq.gz
+PASS	Sequence Duplication Levels	INP_R2.fastq.gz
+WARN	Overrepresented sequences	INP_R2.fastq.gz
+WARN	Adapter Content	INP_R2.fastq.gz
