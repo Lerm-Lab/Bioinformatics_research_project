@@ -48,7 +48,7 @@ if (!require(VennDiagram)) install.packages("VennDiagram", repos = "http://cran.
 library(VennDiagram)
 
 # 1. Enter your exact numbers
-# These come from your terminal output
+
 grid.newpage()
 draw.triple.venn(
   area1 = 13121,    # Total In-House

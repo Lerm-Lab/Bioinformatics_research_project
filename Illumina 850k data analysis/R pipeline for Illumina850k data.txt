@@ -14,6 +14,7 @@
 # 5. Multidimensional scaling (MDS) plot
 # 6. Filtering
 # 7. Cell type deconvolution
+# 8. Array Gene List
 
 
 
