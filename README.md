@@ -12,8 +12,7 @@ Linköping University
 shumaila.sayyab@liu.se
 
 Step 1 - Running MINUTE on test data
-Test data was analysed following the protocol from Kumar et al., 2025 _Multiplexed chromatin immunoprecipitation sequencing for quantitative study of histone modifications and chromatin factors. 
-_ The test data was downloaded from their GitHub repositories, MINUTE was installed and run locally to see that the pipeline functions correctly on (histone) data. The results from the test data are not part of this repository. 
+Test data was analysed following the protocol from Kumar et al., 2025 'Multiplexed chromatin immunoprecipitation sequencing for quantitative study of histone modifications and chromatin factors'. The test data was downloaded from their GitHub repositories, MINUTE was installed and run locally to see that the pipeline functions correctly on (histone) data. The results from the test data are not part of this repository. 
 
 Step 2 - Running MINUTE on the PBMC samples (after sequencing)
 
