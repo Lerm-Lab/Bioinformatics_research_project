@@ -1,0 +1,38 @@
+# Configuration settings for the minute pipeline
+# Paths (unless absolute) are relative to the directory in which snakemake is run.
+
+references:
+  hg19:  # Arbitrary name for this reference. This is also used in output file names.
+
+    # Path to a reference FASTA file (may be gzip-compressed).
+    # A matching Bowtie2 index must exist in the same location.
+    fasta: "/home/ubuntu/Epigenica_data/Klaudia_analysis_new/hg19_reference/hg19.fa.gz"
+
+    # Path to a BED file with regions to exclude.
+    # If this is empty, no regions are excluded.
+    exclude: "/home/ubuntu/Epigenica_data/Klaudia_analysis_new/hg19_reference/hg19-blacklist.v2.bed"
+
+
+# Length of the 5' UMI
+umi_length: 8
+
+# Fragment length (insert size)
+fragment_size: 470
+
+# Allow this many errors in the barcode when demultiplexing
+max_barcode_errors: 1
+
+# Filter out reads under certain mapping quality (0: no filtering)
+mapping_quality: 0
+
+# If filtered_bigwigs rule is run, additional bigWig files are produced,
+# where reads with MQ lower than this value are filtered out. This parameter
+# is independent of mapping_quality parameter above.
+mapping_quality_bigwig: 20
+
+# Aligner to use in the genome alignment step
+# Valid options: bowtie2, strobealign
+aligner: "bowtie2"
+
+# Bowtie2 alignment mode:
+# fast, fast-local, sensitive, sensitive-local, very-sensitive
